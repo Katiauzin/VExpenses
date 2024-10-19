@@ -53,3 +53,32 @@ O arquivo `main.tf` foi criado para configurar a seguinte infraestrutura na AWS 
    ```bash
    git clone https://github.com/SeuUsuario/VExpenses.git
    cd VExpenses
+2. Edite as variáveis do projeto conforme necessário no arquivo main.tf, especialmente se houver necessidade de personalização.
+
+3. Inicialize o Terraform:
+   ```bash
+   terraform init
+
+4. Aplique o código para provisionar a infraestrutura:
+   ```bash
+   terraform apply
+   
+Quando solicitado, digite yes para confirmar a criação da infraestrutura.
+
+### Verificando a Instalação do Nginx
+Após a execução bem-sucedida, o IP público da instância EC2 será exibido na saída do Terraform. Use este IP para acessar o servidor Nginx via navegador, por exemplo:
+
+    ```bash
+    http://<ec2_public_ip>
+    
+### Destruindo a Infraestrutura
+Quando quiser remover todos os recursos criados, execute:
+
+    ```bash
+    terraform destroy
+
+### Arquivos Incluídos
+- main.tf: Arquivo principal contendo o código Terraform para a criação da infraestrutura.
+- README.md: Este arquivo, com a documentação completa do projeto e instruções de uso.
+### Considerações Finais
+Esta implementação segue as melhores práticas para provisionamento de infraestrutura automatizada, utilizando Terraform. Além disso, são garantidos os aspectos de segurança e eficiência, como solicitado no desafio.
