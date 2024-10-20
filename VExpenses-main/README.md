@@ -10,6 +10,16 @@ Este documento descreve o processo para criar uma instância EC2 na AWS utilizan
 
 ## Passos para Configuração
 
+- VPC: Uma Virtual Private Cloud (VPC) é criada com o CIDR block `10.0.0.0/16`.
+- Subnetwork: Uma subnet é configurada dentro da VPC, utilizando o CIDR block `10.0.1.0/24` e alocada na zona de disponibilidade `us-east-1a`.
+- Internet Gateway: Um Internet Gateway é criado e associado à VPC, permitindo que a instância EC2 tenha acesso à internet.
+- Route Table: A Route Table é configurada para rotear o tráfego da subnet através do Internet Gateway.
+- Security Group: Um Security Group é criado com as seguintes permissões:
+  - Permitir tráfego SSH (porta 22) de qualquer origem.
+  - Permitir tráfego HTTP (porta 80) de qualquer origem.
+- Key Pair: Um par de chaves SSH (`VExpenses-Rafael-key-v4`) é associado à instância EC2 para permitir acesso seguro.
+- Instância EC2: Uma instância EC2 é configurada utilizando a AMI `ami-06b21ccaeff8cd686` Exemplo de AMI, substitua conforme necessário (Amazon Linux 2), que será automaticamente iniciada ao final do provisionamento.
+
 ### 1. Arquivo Terraform (main.tf)
 
 ### 2. Inicializar e Aplicar o Terraform
