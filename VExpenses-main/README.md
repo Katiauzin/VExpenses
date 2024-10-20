@@ -13,8 +13,8 @@ O arquivo `main.tf` foi criado para configurar a seguinte infraestrutura na AWS 
 - **Security Group**: Um Security Group é criado com as seguintes permissões:
   - Permitir tráfego SSH (porta 22) de qualquer origem.
   - Permitir tráfego HTTP (porta 80) de qualquer origem.
-- **Key Pair**: Um par de chaves SSH (`VExpenses-Rafael-key-v3`) é associado à instância EC2 para permitir acesso seguro.
-- **Instância EC2**: Uma instância EC2 é configurada utilizando a AMI `ami-06b21ccaeff8cd686` (Amazon Linux 2), que será automaticamente iniciada ao final do provisionamento.
+- **Key Pair**: Um par de chaves SSH (`VExpenses-Rafael-key-v4`) é associado à instância EC2 para permitir acesso seguro.
+- **Instância EC2**: Uma instância EC2 é configurada utilizando a AMI `ami-06b21ccaeff8cd686` Exemplo de AMI, substitua conforme necessário (Amazon Linux 2), que será automaticamente iniciada ao final do provisionamento.
 
 ### Observações Técnicas
 
