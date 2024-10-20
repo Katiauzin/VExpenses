@@ -82,3 +82,5 @@ Quando quiser remover todos os recursos criados, execute:
 - README.md: Este arquivo, com a documentação completa do projeto e instruções de uso.
 ### Considerações Finais
 Esta implementação segue as melhores práticas para provisionamento de infraestrutura automatizada, utilizando Terraform. Além disso, são garantidos os aspectos de segurança e eficiência, como solicitado no desafio.
+![image](https://github.com/user-attachments/assets/e48d38dd-0a12-46a9-b8ce-d543bd104f3d)
+
